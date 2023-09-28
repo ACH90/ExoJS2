@@ -1,32 +1,41 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Liste déroulante</title>
     <script src="/script.js" defer></script>
-    <style>
-        .highlight {background-color: yellow;}
-    </style>
 </head>
 <body>
-    <h1>Contrepèteries Borderline</h1>
-
-    <input type="text" id="input" placeholder="Entrez votre recherche">
-    <button id="button" ></button>
-
-    <ul id="itemList">
-        <li>Les poules du couvent couvent. Les couvents poussent.</li>
-        <li>Les fesses des nonnes sont des lanternes.</li>
-        <li>Il vaut mieux une fin horrible qu'un horaire fini.</li>
-        <li>Le lapin met la charrue devant les bœufs.</li>
-        <li>Le ministre des finances se gratte la fesse gauche.</li>
-        <li>Le plombier a mis la tuyauterie à l'envers.</li>
-        <li>Le vendeur de chaussures n'a pas sa langue dans sa poche.</li>
-        <li>Le boulanger a perdu la recette de ses baguettes.</li>
-        <li>Le chasseur a attrapé une perdrix pour le perdreau.</li>
-        <li>Le maréchal-ferrant a ferré le cheval à l'envers.</li>
-    </ul>
-
+    <h1>Sélectionner une option :</h1>
+    
+    <!-- Liste déroulante -->
+    <select id="maListeDeroulante">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+    </select>
+    
+    <br><br>
+    
+    <!-- Bouton "Sélectionner" -->
+    <button onclick="afficherSelection()">Sélectionner</button>
+    
+    <br><br>
+    
+    <!-- Zone de texte pour afficher la sélection -->
+    <textarea id="zoneTexte" rows="4" cols="50" readonly></textarea>
+    
+    <!-- Script JavaScript pour afficher la sélection -->
+   <br>
+   <br><br>
+    <select name="listeDeroulanteOk" id="okok">
+        <option value="maisooooon">maison</option>
+        <option value="garage">garage</option>
+        <option value="cuisine">cuisine</option>
+        <option value="studio">studio</option>
+    </select>
+    <button id="button">Choisir</button>
+    <br>
+    <textarea name="text" id="text" cols="10" rows="10"></textarea>
 </body>
 </html>
